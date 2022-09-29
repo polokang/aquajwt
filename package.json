@@ -1,0 +1,42 @@
+{
+  "name": "aquajwt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2-runtime start ./ecosystem.config.js --interpreter babe",
+    "dev": "pm2-runtime start ./ecosystem-dev.config.js --interpreter babe",
+    "debug": "nodemon --inspect src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sequelize-automate": "sequelize-automate -t js -h aquareporter.com.au -d AquariusTestDB -u AquariusTechDB -p AquareporterPa$$4108 -P 1433 -e mssql -o models"
+  },
+  "author": "Hunter",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-preset-es2015": "^6.24.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "envdotjson": "^1.2.0",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^6.0.0",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mariadb": "^3.0.1",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.23.0",
+    "swagger-ui-express": "^4.5.0",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "yamljs": "^0.3.0"
+  }
+}
